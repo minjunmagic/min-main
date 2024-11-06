@@ -1,0 +1,61 @@
+/* 기본 레이아웃 스타일 */
+header, footer, nav, aside, article, section {
+    border: 1px dashed #888;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    border: yellow;
+
+}
+
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+header h1 {
+    font-weight: bold;
+}
+
+/* 반응형 디자인을 위한 스타일 */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1 1 60%;
+}
+
+aside {
+    flex: 1 1 30%;
+}
+
+section {
+    border: 1px solid #444;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    /* 모바일 환경을 위한 레이아웃 수정 */
+    main {
+        display: block;
+    }
+
+    article, aside {
+        flex: 1 1 100%;
+    }
+}
