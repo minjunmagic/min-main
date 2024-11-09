@@ -43,11 +43,25 @@ section {
     margin: 10px 0;
 }
 
+.text-center{
+    color: chocolate;
+}
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: #f1f1f1;
 }
+
+#main4{
+    color: chocolate;
+}
+
+
+.section01{
+    background: url('../image/background.jpg') no-repeat;
+}
+
 
 @media (max-width: 768px) {
     /* 모바일 환경을 위한 레이아웃 수정 */
