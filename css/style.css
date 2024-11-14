@@ -1,6 +1,13 @@
+body{
+    background:#F8F9FA;
+    color:#333333;
+    font-family: Noto Sans, sans-serif, "나눔 고딕";
+    letter-spacing: -1px;
+}
+
 /* 기본 레이아웃 스타일 */
 header, footer, nav, aside, article, section {
-    border: 1px dashed #888;
+    border: 1px dashed #ccc;
     padding: 10px;
     margin: 10px 0;
 }
@@ -24,27 +31,47 @@ header h1 {
     font-weight: bold;
 }
 
-/* 반응형 디자인을 위한 스타일 */
-main {
-    display: flex;
-    flex-wrap: wrap;
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007B8B; /* 필요에 따라 배경색 추가 */
+    z-index: 1000; /* 다른 요소들 위에 표시되도록 z-index 설정 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 스크롤 고정 시 상단 그림자 추가 */
+    font-weight:bold;
+    margin:0;
 }
 
+a{color:#007B8B !important;}
+a:hover{text-decoration: underline;}
+.fixed-nav a{color:#fff !important;font-weight:100;}
+.fixed-nav a:hover{color:#fff !important;}
+
+
+
+/* 반응형 디자인을 위한 스타일 */
+main {
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+/* 
 article {
     flex: 1 1 60%;
 }
 
 aside {
     flex: 1 1 30%;
-}
+} */
 
 section {
-    border: 1px solid #444;
-    margin: 10px 0;
+    border: 1px solid #E0E0E0;
+    margin: 30px 0;
 }
 
-.text-center{
-    color: chocolate;
+.text-pointcolor{
+    color: #007B8B !important;
 }
 
 footer {
@@ -53,13 +80,14 @@ footer {
     background-color: #f1f1f1;
 }
 
-#main4{
-    color: chocolate;
-}
-
 
 .section01{
     background: url('../image/background.jpg') no-repeat;
+    background-size: cover;
+}
+.section02{
+    background: url('../image/background2.jpg') no-repeat;
+    background-size: cover;
 }
 
 
